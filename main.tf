@@ -14,7 +14,7 @@ resource "aws_vpc" "Alisa_VPC" {
     } 
     
 # create the Subnet
-resource "aws_subnet" "Alisa_Subnet" {
+resource "aws_subnet" "test2_Subnet" {
     vpc_id                  = aws_vpc.Alisa_VPC.id
     cidr_block              = "10.0.1.0/26"
     tags = {
